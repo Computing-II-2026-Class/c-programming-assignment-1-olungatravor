@@ -1,11 +1,24 @@
-/* Name: Your Full Name */
-/* Student Number: Your Registration Number */
+/*Name: Olunga Travor*/
+/*Student Number: 25/U/BIO/028/GV*/
 
-#include <stdio.h>
+# include<stdio.h>
+int main(void){
 
-int main(void)
-{
-    /* Write your code here */
+ float Units = 0;
+ float price = 0.0f;
+ char currency = 'UGX' ;
+ int total = 0 ;
+ 
+ printf("How many units acquired?: ");
+ scanf("%f", &Units);
 
-    return 0;
+ printf("Whats the price for each?: ");
+ scanf("%f", &price);
+
+ total = price * Units;
+
+ printf("Total charge: %d UGX \n", total);
+
+ return 0;
+
 }
