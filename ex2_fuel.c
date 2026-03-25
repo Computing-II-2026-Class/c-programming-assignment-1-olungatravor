@@ -1,22 +1,19 @@
-/*Name: Olunga Travor*/
-/*Student Number: 25/U/BIO/028/GV*/
+/* Name: Olunga Travor */
+/* Student Number: 25/U/BIO/028/GV */
 #include <stdio.h>
 int main(void){
 
-    float Distance = 0.0f;
-    float Fuel = 0.0f;
-    float usage = 0.0f;
+    float distance = 0.0f;
+    float fuel_used = 0.0f;
+    float efficiency = 0.0f;
 
-    printf("Total distance travelled(km): ");
-    scanf("%f", &Distance);
+    printf("Enter distance (km): ");
+    scanf("%f", &distance);
+    printf("Enter fuel used (litres): ");
+    scanf("%f", &fuel_used);
 
-    printf("Total fuel capacity used(l): ");
-    scanf("%f", &Fuel);
-
-
-    usage = Distance / Fuel;
-
-    printf("The fuel efficiency is %.0f km/l \n", usage); 
+    efficiency = distance / fuel_used;
+    printf("Fuel efficiency:%.2f km/l\n", efficiency); 
 
     return 0;
 
