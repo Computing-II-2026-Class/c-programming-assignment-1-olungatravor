@@ -1,25 +1,29 @@
-/*Name: Olunga Travor*/
-/*Student: 25/U/BIO/028/GV*/
+/* Name: Olunga Travor */
+/* Student: 25/U/BIO/028/GV */
 
 #include <stdio.h>
 
 int main (void){
 
-    int amount = 0 ;
-    float charge = 0.0f;
-    float Total = 0.0f;
+    int amount_to_send = 0 ;
+    float transaction_fee = 0.0f;
+    float fee_amount = 0.0f;
+    float total_amount_deducted= 0.0f;
 
 
-    printf("Amount to be sent? ");
-    scanf("%d", &amount);
+    printf("Enter amount to send: ");
+    scanf("%d", &amount_to_send);
 
-    charge = 0.15 * amount;
-
-    printf("Total charges due %.0f UGX \n", charge);
-
-    Total = amount + charge;
+    printf("Enter transaction fee(%%): ");
+    scanf("%f", &transaction_fee);
     
-    printf("The total amount charged is %.0f UGX \n", Total);
+    fee_amount = (transaction_fee/100) * amount_to_send;
+
+    total_amount_deducted = amount_to_send + fee_amount;
+    printf("\n------Transaction summary-----\n");
+    printf("Amount Sent: %d UGX\n", amount_to_send);
+    printf("total amount deducted: %.2f UGX\n", total_amount_deducted);
+    printf("--------------------- \n");
     
 return 0;
 }
