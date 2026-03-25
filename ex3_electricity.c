@@ -1,5 +1,5 @@
-/* Name: Olunga Travor */
-/* Student Number: 2500800028 25/U/BIO/028/GV */
+/* Name: OLUNGA TRAVOR */
+/* Student Number: 25/U/BIO/028/GV */
 # include<stdio.h>
 int main(void){
 
