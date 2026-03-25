@@ -1,23 +1,22 @@
-/*Name: Olunga Travor*/
-/*Student Number: 25/U/BIO/028/GV*/
+/* Name: Olunga Travor */
+/* Student Number: 25/U/BIO/028/GV */
 
 # include<stdio.h>
 int main(void){
 
  float Units = 0;
  float price = 0.0f;
- char currency = 'UGX' ;
- int total = 0 ;
+ float total_bill = 0.0f;
  
- printf("How many units acquired?: ");
+ printf("Enter units consumed: ");
  scanf("%f", &Units);
 
- printf("Whats the price for each?: ");
+ printf("Enter cost per unit: ");
  scanf("%f", &price);
 
- total = price * Units;
+ total_bill = price * Units;
 
- printf("Total charge: %d UGX \n", total);
+ printf("Total bill: %.2f UGX \n", total_bill);
 
  return 0;
 
