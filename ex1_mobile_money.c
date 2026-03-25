@@ -1,6 +1,5 @@
 /* Name: Olunga Travor */
 /* Student: 25/U/BIO/028/GV */
-
 #include <stdio.h>
 
 int main (void){
